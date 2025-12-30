@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/en.js"></script>
+<script>dayjs.locale('en')</script>
+</head>
+<body>
+
+<div id="app">
+  <form onsubmit="saveActivity(event)">
+    <div id="place" class="card-bg">
+      <svg width="20" height="20" viewBox="0 0 310 438" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M155 11C75.5 11 11 72.39 11 148C11 235 107 372.87 142.25 420.49C143.713 422.5 145.631 424.136 147.847 425.264C150.063 426.391 152.514 426.979 155 426.979C157.486 426.979 159.937 426.391 162.153 425.264C164.369 424.136 166.287 422.5 167.75 420.49C203 372.89 299 235.07 299 148C299 72.39 234.5 11 155 11Z" stroke="white" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M155 203C181.51 203 203 181.51 203 155C203 128.49 181.51 107 155 107C128.49 107 107 128.49 107 155C107 181.51 128.49 203 155 203Z" stroke="white" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+      Palo Alto, CA
+    </div>
+    <div class="fields">
+      <div class="field-wrapper">
+        <svg width="20" height="20" viewBox="0 0 438 438" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M398.2 11H275.3C271.479 10.9972 267.812 12.5072 265.1 15.2L19.4001 260.9C14.0202 266.306 11 273.623 11 281.25C11 288.877 14.0202 296.194 19.4001 301.6L136.4 418.6C141.806 423.98 149.123 427 156.75 427C164.377 427 171.694 423.98 177.1 418.6L422.7 173C425.393 170.289 426.903 166.621 426.9 162.8V39.8C426.919 36.0212 426.19 32.2761 424.755 28.7801C423.32 25.2841 421.209 22.1063 418.541 19.4296C415.874 16.7529 412.703 14.6301 409.213 13.1834C405.722 11.7367 401.979 10.9947 398.2 11Z" stroke="white" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M346.95 117C341.808 117 336.781 115.475 332.505 112.618C328.23 109.761 324.897 105.701 322.929 100.95C320.961 96.1989 320.446 90.9712 321.45 85.9277C322.453 80.8842 324.929 76.2514 328.565 72.6153C332.201 68.9791 336.834 66.5028 341.878 65.4996C346.921 64.4964 352.149 65.0113 356.9 66.9792C361.651 68.9471 365.711 72.2795 368.568 76.5552C371.425 80.8309 372.95 85.8577 372.95 91C372.95 97.8957 370.211 104.509 365.335 109.385C360.459 114.261 353.846 117 346.95 117Z" fill="white"/>
+        </svg>
+
+      <input 
+      type="text" 
+      placeholder="What's the activity?"
+      name="activity"
+      required
+      >
+      </div>
+
+      <div class="field-wrapper">
+        <svg width="20" height="20" viewBox="0 0 438 438" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M379 43H59C32.4903 43 11 64.4903 11 91V379C11 405.51 32.4903 427 59 427H379C405.51 427 427 405.51 427 379V91C427 64.4903 405.51 43 379 43Z" stroke="white" stroke-width="22" stroke-linejoin="round"/>
+        <path d="M91 11V43M347 11V43M427 123H11" stroke="white" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <select name="day">
+        <option value="2025-02-01">1 february</option>
+        </select>
+      </div>
+      
+      <div class="field-wrapper">
+        <svg width="20" height="20" viewBox="0 0 406 406" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M203 11C97 11 11 97 11 203C11 309 97 395 203 395C309 395 395 309 395 203C395 97 309 11 203 11Z" stroke="white" stroke-width="22" stroke-miterlimit="10"/>
+        <path d="M203 75V219H299" stroke="white" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <select name="hour">
+        <option value="10:30">10:30</option>
+        </select>
+      </div>
+    </div>
+    
+    <button>Save Activity</button>
+  </form>
+
+  <main>
+    <h1>Activities</h1>
+    <section>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
