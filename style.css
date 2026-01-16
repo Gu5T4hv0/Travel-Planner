@@ -81,6 +81,7 @@ button:active{
   inset 0px 0px 0px 1px rgba(255, 255, 255, 0.03),
   inset 0px 1px 0px rgba(255, 255, 255, 0.03);
   border-radius: 12px;
+  cursor: pointer;
 }
 
 /* main */
@@ -159,4 +160,5 @@ section .card-bg{
   from {
     opacity: 0;
   }
+
 }
