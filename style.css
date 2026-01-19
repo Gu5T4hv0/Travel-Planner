@@ -131,6 +131,15 @@ time{
 time.full{
   display: none;
 }
+footer{
+  color: rgba(255, 255, 255, 0.352);
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+footer a{
+  color: rgba(255, 255, 255, 0.352);
+}
 
 @media (width > 1024px) {
   #app {
@@ -151,6 +160,11 @@ time.full{
   time.short{
     display: none;
   }
+  footer{
+    text-align: end;
+    margin-top: 10px;
+    font-size: 12px;
+  }
 }
 
 section .card-bg{
@@ -160,5 +174,4 @@ section .card-bg{
   from {
     opacity: 0;
   }
-
 }
